@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestA(failed)">
+    <parameter name="UserName" value="Shiva Ratri"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="url" value="https://www.google.co.in/"/>
+    <classes>
+      <class name="testNG.CrossBrowser">
+        <methods>
+          <include name="bt" invocation-numbers="0"/>
+          <include name="user"/>
+          <include name="launchapp" invocation-numbers="0"/>
+          <include name="at"/>
+        </methods>
+      </class> <!-- testNG.CrossBrowser -->
+    </classes>
+  </test> <!-- TestA(failed) -->
+  <test thread-count="5" name="TestB(failed)">
+    <parameter name="UserName" value="Shiva Ratri"/>
+    <parameter name="browserName" value="FireFox"/>
+    <parameter name="url" value="https://www.google.co.in/"/>
+    <classes>
+      <class name="testNG.CrossBrowser">
+        <methods>
+          <include name="bt" invocation-numbers="0"/>
+          <include name="user"/>
+          <include name="launchapp" invocation-numbers="0"/>
+          <include name="at"/>
+        </methods>
+      </class> <!-- testNG.CrossBrowser -->
+    </classes>
+  </test> <!-- TestB(failed) -->
+  <test thread-count="5" name="TestC(failed)">
+    <parameter name="UserName" value="Shiva Ratri"/>
+    <parameter name="browserName" value="Edge"/>
+    <parameter name="url" value="https://www.google.co.in/"/>
+    <classes>
+      <class name="testNG.CrossBrowser">
+        <methods>
+          <include name="bt" invocation-numbers="0"/>
+          <include name="user"/>
+          <include name="launchapp" invocation-numbers="0"/>
+          <include name="at"/>
+        </methods>
+      </class> <!-- testNG.CrossBrowser -->
+    </classes>
+  </test> <!-- TestC(failed) -->
+</suite> <!-- Failed suite [Suite] -->

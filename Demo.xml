@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Testa">
+    <classes>
+      <class name="testNG.Demo">
+		  <methods>
+			  <include name="Myntra"/>
+			  <include name="Ajio"/>
+		  </methods>
+	  </class>
+      <class name= "testNG.Priorities">
+		  <methods>
+			  <include name="Add"/>
+			  <exclude name="Del"/>
+			  <include name="Hcl"/>
+		  </methods>
+	  </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name = "Testb">
+	  <classes>
+		  <class name ="testNG.Groups"/>
+		  <class name= "testNG.invoc"/>
+	  </classes>
+  </test>
+</suite> <!-- Suite -->
